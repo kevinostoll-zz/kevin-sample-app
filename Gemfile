@@ -4,8 +4,7 @@ ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.1.0'
-
-
+gem 'pg', '0.15.1'
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -20,9 +19,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
-  gem 'spring'
 end
 
 group :test do
@@ -32,6 +29,5 @@ end
 
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
